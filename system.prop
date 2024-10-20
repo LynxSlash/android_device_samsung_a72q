@@ -1,16 +1,13 @@
 # Device release name
-ro.display.series=Samsung Galaxy A72
+ro.display.series=Samsung Galaxy A70
 
 # product/board stuff
-ro.product.board=atoll
-ro.board.platform=atoll
+ro.product.board=sm6150
+ro.board.platform=sm6150
 
 # USB and MTP stuff
 persist.sys.usb.config=mtp
 sys.usb.controller=a600000.dwc3
-
-# Dynamic partition
-ro.boot.dynamic_partitions=true
 
 # Encryption
 ro.hardware.gatekeeper=mdfpp
@@ -28,3 +25,6 @@ persist.sys.disable_rescue=true
 # AVB
 ro.boot.avb_version=1.0
 ro.boot.vbmeta.avb_version=1.0
+
+# SDCard
+ro.sys.sdcardfs=true
