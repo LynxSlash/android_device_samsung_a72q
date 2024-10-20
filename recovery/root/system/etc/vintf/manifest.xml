@@ -1,11 +1,9 @@
 <!--
     Input:
         manifest.xml
-        framework_manifest.xml
-        manifest.xml
 -->
-<manifest version="4.0" type="framework">
-    <hal format="hidl">
+<manifest version="5.0" type="framework">
+    <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -89,57 +87,12 @@
         <name>netutils-wrapper</name>
         <version>1.0</version>
     </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.radio.atcmdfwd</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAtCmdFwd</name>
-            <instance>AtCmdFwdService</instance>
-        </interface>
-        <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.sigma_miracast</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>Isigma_miracast</name>
-            <instance>sigmahal</instance>
-            <instance>sigmahal64</instance>
-        </interface>
-        <fqname>@1.0::Isigma_miracast/sigmahal</fqname>
-        <fqname>@1.0::Isigma_miracast/sigmahal64</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.systemhelper</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISystemEvent</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISystemResource</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISystemEvent/default</fqname>
-        <fqname>@1.0::ISystemResource/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.frameworks.security.ucm.crypto</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehUcmKeystore</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISehUcmKeystore/default</fqname>
-    </hal>
     <system-sdk>
         <version>28</version>
         <version>29</version>
         <version>30</version>
         <version>31</version>
+        <version>32</version>
+        <version>33</version>
     </system-sdk>
 </manifest>
